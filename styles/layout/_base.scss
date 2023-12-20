@@ -11,7 +11,7 @@ body {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'DM Sans', sans-serif;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -21,14 +21,22 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $colorDark;
+  background: $colorLight;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     color-scheme: dark;
+//   }
+//   body {
+//     color: $colorLight;
+//     background: $colorDark;
+//   }
+// }
+
+.container {
+  max-width: remify(1160px);
+  margin: 0 auto;
+  padding: 0 remify(40px);
 }

@@ -1,0 +1,63 @@
+@import '../../styles/globals.scss';
+
+.card {
+  background-color: $colorWhite;
+  border-radius: remify(16px);
+  box-shadow: 0 0 remify(40px) 0 rgba(44, 59, 64, 0.15);
+  padding: remify(24px);
+  grid-column: 1/-1;
+
+  @include respond-to(md) {
+    grid-column: span 2;
+  }
+
+  &--custom {
+    @include respond-to(md) {
+      grid-column: span 3;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__city {
+    font-size: remify(20px);
+    line-height: remify(24px);
+    letter-spacing: remify(-0.34px);
+
+    @include respond-to(md) {
+      font-size: remify(28px);
+      line-height: remify(32px);
+      letter-spacing: remify(-0.588px);
+    }
+  }
+
+  &__phone,
+  &__email,
+  &__address {
+    font-size: remify(16px);
+    line-height: remify(24px);
+    letter-spacing: remify(-0.176px);
+
+    @include respond-to(md) {
+      font-size: remify(18px);
+      line-height: remify(24px);
+      letter-spacing: remify(-0.198px);
+    }
+  }
+
+  &__email {
+    word-wrap: break-word;
+    margin-bottom: remify(8px);
+
+    @include respond-to(md) {
+      margin-bottom: remify(12px);
+    }
+  }
+  
+  &__address {
+    color: $colorGray;
+  }
+}

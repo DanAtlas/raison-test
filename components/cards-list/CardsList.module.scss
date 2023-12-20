@@ -1,0 +1,17 @@
+@import '../../styles/globals.scss';
+
+.cards-list {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: remify(40px) 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: remify(16px);
+
+  @include respond-to(md) {
+    margin: remify(-207px) 0 0;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: remify(24px);
+  }
+}
