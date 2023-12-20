@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import CardsList from 'components/cards-list/CardsList';
-import styles from '../styles/home.module.scss';
+import styles from './home.module.scss';
 import cardsListData from '../json/cards-list.json';
 
 const Home: NextPage = () => {
