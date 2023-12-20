@@ -50,6 +50,7 @@
 
   &__email {
     word-wrap: break-word;
+    word-break: break-all;
     margin-bottom: remify(8px);
 
     @include respond-to(md) {
